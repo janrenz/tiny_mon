@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3103245810">
+  <component name="DataSourceManagerImpl" format="xml" hash="1353618101">
     <data-source source="LOCAL" name="Rails tiny_mon: development" uuid="7f5bf848-65d3-4f1d-9398-0e54100e96df">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

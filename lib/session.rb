@@ -12,10 +12,9 @@ class Session < Capybara::Session
   def initialize(url)
     @url = url
     @log_entries = []
+    
     Capybara.app_host = @url
-    #Capybara.register_driver :poltergeist do |app|
-    #  Capybara::Poltergeist::Driver.new(app, { :timeout => 9000 })
-    #end
+    
     super(:poltergeist)
   end
   
@@ -30,6 +29,11 @@ class Session < Capybara::Session
   
   def visit(url)
     log "getting #{url}"
+    super
+  end
+
+  def set_user_agent(user_agent)
+    log "user agent is now #{user_agent}"
     super
   end
   
@@ -54,9 +58,9 @@ class Session < Capybara::Session
     Dir.create_tmp_dir "renderer", "#{Rails.root}/tmp" do
       driver.render "#{Dir.pwd}/screenshot.png", :full => true
       system %{pngcrush screenshot.png crushed.png}
-
+      
       file = ScreenshotFile.store!("crushed.png", :thumbnail => true)
-
+      
       self.last_screenshot = Screenshot.new(:checksum => file.checksum)
     end
   end
