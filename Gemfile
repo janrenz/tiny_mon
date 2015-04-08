@@ -1,7 +1,7 @@
 ruby '2.2.1'
 source 'http://rubygems.org'
 gem 'rails', '~> 4.0.3'
-gem 'rake', '10.1.1'
+gem 'rake'
 gem "mysql2"
 
 gem "acts_as_list"
