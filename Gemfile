@@ -30,6 +30,9 @@ gem 'ionicons-rails'
 gem 'font-awesome-rails'
 
 gem 'slack-notifier', '~> 1.1.0'
+gem 'pg'
+gem 'airbrake'
+gem 'upmin-admin'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
