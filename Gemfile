@@ -29,6 +29,8 @@ gem 'jqplot-rails', :git => 'git://github.com/eightbitraptor/jqplot-rails.git'
 gem 'ionicons-rails'
 gem 'font-awesome-rails'
 
+gem 'slack-notifier', '~> 1.1.0'
+
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem "therubyracer"
@@ -66,7 +68,7 @@ group :deploy do
   gem 'capistrano-rails'
 end
 
-group :vm do
-  gem 'vagrant', :git => 'git://github.com/mitchellh/vagrant.git', :ref => 'v1.2.2'
-  gem 'vagrant-berkshelf', '>= 2.0.1'
-end
+#group :vm do
+#  gem 'vagrant', :git => 'git://github.com/mitchellh/vagrant.git', :ref => 'v1.2.2'
+#  gem 'vagrant-berkshelf', '>= 2.0.1'
+#end
