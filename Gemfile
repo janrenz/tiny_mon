@@ -29,11 +29,7 @@ gem 'jqplot-rails', :git => 'git://github.com/eightbitraptor/jqplot-rails.git'
 gem 'ionicons-rails'
 gem 'font-awesome-rails'
 
-<<<<<<< HEAD
 gem 'slack-notifier', '~> 1.1.0'
-=======
-gem 'slack-notifier'
->>>>>>> bd26d8299eef1b4d0e24fe48480e969c97d6a4c0
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
