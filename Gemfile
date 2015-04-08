@@ -29,6 +29,8 @@ gem 'jqplot-rails', :git => 'git://github.com/eightbitraptor/jqplot-rails.git'
 gem 'ionicons-rails'
 gem 'font-awesome-rails'
 
+gem 'slack-notifier'
+
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem "therubyracer"
