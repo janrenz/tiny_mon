@@ -760,6 +760,7 @@ de:
     submit_form: "Schicke Formular ab"
     take_screenshot: "Screenshot erstellen"
     visit: "Gehe zu"
+    set_user_agent: "User-Agent setzen"
     wait: Warte
   steps: 
     check_content_step: 

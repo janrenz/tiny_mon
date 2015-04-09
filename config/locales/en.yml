@@ -760,6 +760,7 @@ en:
     submit_form: "Submit form"
     take_screenshot: "Take screenshot"
     visit: Visit
+    set_user_agent: "Set user agent string"
     wait: Wait
   steps: 
     check_content_step: 
