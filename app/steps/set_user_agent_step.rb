@@ -4,7 +4,7 @@ class SetUserAgentStep < Step
   validates_presence_of :user_agent
 
   def run!(session, check_run)
-    session.set_user_agent(self.user_agent)
+    session.driver.add_headers("User-Agent" => self.user_agent)
   end
 
 end
