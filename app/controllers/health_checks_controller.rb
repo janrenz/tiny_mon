@@ -127,7 +127,7 @@ class HealthChecksController < ApplicationController
 
 private
   def health_check_params
-    params.require(:health_check).permit(:enabled, :name, :description, :interval, :bulk_update_interval, :always_send_notification)
+    params.permit(:health_check, :enabled, :name, :description, :interval, :bulk_update_interval, :always_send_notification)
   end
 
 protected
