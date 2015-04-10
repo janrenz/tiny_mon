@@ -51,7 +51,7 @@ bundle install
 rake db:setup:all
 ```
 
-You will also need to install phantomjs and pngcrush.
+~~You will also need to install phantomjs and pngcrush.~~
 
 ## Running
 
