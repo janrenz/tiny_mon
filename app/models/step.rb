@@ -15,6 +15,7 @@ class Step < ActiveRecord::Base
     [
       'visit',
       'check_content',
+      'check_text';
       'check_current_url',
       'fill_in',
       'check_element_count',
@@ -30,6 +31,8 @@ class Step < ActiveRecord::Base
       'click_email_link',
       'take_screenshot',
       'run_script',
+      'go_back',
+      'fill_in_date',
       'set_user_agent'
     ]
   end
