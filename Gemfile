@@ -1,6 +1,6 @@
 ruby '2.2.1'
 source 'http://rubygems.org'
-gem 'rails', '~> 4.0.3'
+gem 'rails', '~> 4.1.0'
 gem 'rake'
 gem "mysql2"
 
@@ -9,7 +9,7 @@ gem "capybara"
 gem "poltergeist", :require => 'capybara/poltergeist'
 gem "orderedhash"
 gem 'authlogic', '~> 3.4.0'
-gem "background_lite", '0.3.2'
+gem "background_lite"
 gem "will_paginate"
 gem "permalink_fu"
 gem 'rinku', :require => 'rails_rinku'
