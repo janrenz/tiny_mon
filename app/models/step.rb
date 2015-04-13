@@ -15,7 +15,7 @@ class Step < ActiveRecord::Base
     [
       'visit',
       'check_content',
-      'check_text';
+      'check_text',
       'check_current_url',
       'fill_in',
       'check_element_count',
