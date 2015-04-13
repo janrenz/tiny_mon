@@ -1,62 +1,67 @@
-ruby '2.1.5'
-source 'https://rubygems.org'
-gem 'rails', '~> 4.1.0'
+ruby '2.2.1'
+source 'http://rubygems.org'
+gem 'rails', '~> 4.0.3'
 gem 'rake'
-#gem "mysql2"
-gem "airbrake"
-gem 'upmin-admin'
-gem 'pg'
+gem "mysql2"
+
 gem "acts_as_list"
 gem "capybara"
 gem "poltergeist", :require => 'capybara/poltergeist'
 gem "orderedhash"
 gem 'authlogic', '~> 3.4.0'
-gem 'background_lite'
+gem "background_lite", '0.3.2'
 gem "will_paginate"
 gem "permalink_fu"
 gem 'rinku', :require => 'rails_rinku'
+gem 'mail'
 gem "dynamic_form"
 gem "lhm", :require => false
-gem 'bootstrap-sass'
-gem 'autoprefixer-rails'
+gem "bootstrap-sass"
 gem 'compass'
 gem 'bootstrap-will_paginate'
 gem 'scrypt'
 gem 'rails-i18n', '~> 4.0.0'
+
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'jqplot-rails'
-gem 'nokogiri'
+gem 'jqplot-rails', :git => 'git://github.com/eightbitraptor/jqplot-rails.git'
+
 gem 'ionicons-rails'
 gem 'font-awesome-rails'
-gem 'discover'
-gem 'slack-notifier'
-gem 'rails_12factor'
-gem 'rufus-scheduler'
-gem 'slim'
 
+gem 'slack-notifier', '~> 1.1.0'
+gem 'pg'
+gem 'airbrake'
+gem 'upmin-admin'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem "therubyracer"
   gem "libv8"
   gem 'uglifier', '>= 1.0.3'
-  gem 'premailer-rails'
 end
 
 group :development do
   gem 'i18n_tools'
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
+  gem 'terminal-notifier'
+  gem 'terminal-notifier-guard'
 end
 
 group :test do
   gem 'simplecov', '~> 0.7.1', :require => false
-  gem 'mocha'
+  gem 'mocha' #removeme
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
-
 group :production do
-  gem 'resque'
-  gem 'thin'
+  gem "resque"
+  gem "rails_12factor"
 end
 
 group :deploy do
@@ -66,4 +71,7 @@ group :deploy do
   gem 'capistrano-rails'
 end
 
-
+#group :vm do
+#  gem 'vagrant', :git => 'git://github.com/mitchellh/vagrant.git', :ref => 'v1.2.2'
+#  gem 'vagrant-berkshelf', '>= 2.0.1'
+#end
