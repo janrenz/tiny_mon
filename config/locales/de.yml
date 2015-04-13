@@ -551,6 +551,7 @@ de:
       interval: Prüf-Intervall
       name: Name
       save_health_check: "Funktionstest speichern"
+      send_notifications_always: "Benachrichtigung bei JEDEM Durchgang schicken"
     hash_variable: 
       add_more: "Weitere Zuordnung hinzufügen"
     index: 
@@ -593,6 +594,9 @@ de:
       interval_minutes: 
         one: "%{count} Minute"
         other: "%{count} Minuten"
+        notification: "Benachrichtigung"
+        notification_on_every_run: "Bei jedem Durchlauf"
+        notification_on_change: "Bei jeder Status-Änderung"
       last_check_run: "Letzter Testlauf"
       really_delete_health_check: "Wollen Sie wirklich diesen Funktionstest inklusive aller Testläufe entfernen? Dieser Vorgang kann nicht rückgängig gemacht werden."
       run: "Prüfen"
@@ -743,7 +747,8 @@ de:
     one_or_more_checks_failed: "Einer oder mehr Funktionstests fehlgeschlagen"
     success: Erfolg
   step: 
-    check_content: "Durchsuche Inhalt"
+    check_content: "Durchsuche Inhalt (HTML)"
+    check_text: "Durchsuche Inhalt (Text)"
     check_current_url: "Aktuelle URL prüfen"
     check_element_count: "Zähle Elemente"
     check_email: "Rufe E-Mail ab"
@@ -753,6 +758,8 @@ de:
     click_link: "Klicke Link"
     deselect_check_box: "Check Box abwählen"
     fill_in: "Fülle Feld aus"
+    fill_in_date: "Fülle Datums-Feld aus"
+    go_back: "Gehe zurück"
     in_scope: "im Bereich %{scope_name}"
     run_script: "Script ausführen"
     select_check_box: "Wähle Check Box"
