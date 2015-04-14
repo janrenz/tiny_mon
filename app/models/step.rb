@@ -33,6 +33,7 @@ class Step < ActiveRecord::Base
       'run_script',
       'go_back',
       'fill_in_date',
+      'check_all_links',
       'set_user_agent'
     ]
   end
