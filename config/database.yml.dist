@@ -1,0 +1,15 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: tinymon
+  password: password
+  host: 127.0.0.1
+  port: 3306
+
+development:
+  <<: *default
+  database: tiny_db_dev
+
+production:
+  <<: *default
+  database: tiny_db
