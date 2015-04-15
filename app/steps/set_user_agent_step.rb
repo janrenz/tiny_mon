@@ -5,6 +5,7 @@ class SetUserAgentStep < Step
 
   def run!(session, check_run)
     session.driver.add_headers("User-Agent" => self.user_agent)
+    session.log "user agent is now #{user_agent}"
   end
 
 end
