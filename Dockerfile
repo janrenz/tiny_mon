@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pkg-config \
     libxslt-dev \
     libxml2-dev \
-    libxml2
+    libxml2 \
+    pngcrush
 
 # greatly speeds up nokogiri install
 ENV NOKOGIRI_USE_SYSTEM_LIBRARIES 1
