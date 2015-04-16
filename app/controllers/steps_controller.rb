@@ -78,11 +78,11 @@ class StepsController < ApplicationController
 
 protected
   def step_params type
-    params.require(type.underscore.to_sym).permit(:user_agent, :id, :url, :duration, :content, :count, :dateformat, :field, :value, :negate, :name, :scope, :check_http_code, :mincount, :maxcount, :set_value_direct)
+    params.require(type.underscore.to_sym).permit(:user_agent, :code, :id, :url, :duration, :content, :count, :dateformat, :field, :value, :negate, :name, :scope, :check_http_code, :mincount, :maxcount, :set_value_direct)
   end
 
   def step_update_params type
-    params.require(type.underscore.to_sym).permit(:user_agent, :id, :url, :duration, :content, :count, :dateformat, :field, :value, :negate, :name, :scope, :check_http_code, :mincount, :maxcount, :set_value_direct)
+    params.require(type.underscore.to_sym).permit(:user_agent, :code, :id, :url, :duration, :content, :count, :dateformat, :field, :value, :negate, :name, :scope, :check_http_code, :mincount, :maxcount, :set_value_direct)
   end
 
   def find_site
