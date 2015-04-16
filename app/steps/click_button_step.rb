@@ -6,7 +6,6 @@ class ClickButtonStep < ScopableStep
   def run!(session, check_run)
     with_optional_scope(session) do
       session.click_button(self.name)
-      session.log "clicked button"
     end
   end
 end
