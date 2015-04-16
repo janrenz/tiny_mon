@@ -36,7 +36,12 @@ class Session < Capybara::Session
     log "user agent is now #{user_agent}"
     super
   end
-  
+
+  def send_key(key)
+    log "send key #{key}"
+    super
+  end
+
   def click_link(*args)
     log "Clicking link #{args.first}"
     super

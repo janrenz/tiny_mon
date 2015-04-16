@@ -27,6 +27,7 @@ class Step < ActiveRecord::Base
       'click_link',
       'wait',
       'submit_form',
+      'send_key',
       'check_email',
       'click_email_link',
       'take_screenshot',
