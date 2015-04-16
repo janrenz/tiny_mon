@@ -768,6 +768,7 @@ en:
     submit_form: "Submit form"
     take_screenshot: "Take screenshot"
     visit: Visit
+    send_key: "Send key"
     set_user_agent: "Set user agent string"
     wait: Wait
   steps: 

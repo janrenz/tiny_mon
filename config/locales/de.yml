@@ -768,6 +768,7 @@ de:
     take_screenshot: "Screenshot erstellen"
     visit: "Gehe zu"
     set_user_agent: "User-Agent setzen"
+    send_key: "Tastendruck senden"
     wait: Warte
   steps: 
     check_content_step: 
