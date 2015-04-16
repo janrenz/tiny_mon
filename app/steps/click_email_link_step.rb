@@ -5,5 +5,6 @@ class ClickEmailLinkStep < Step
   
   def run!(session, check_run)
     session.click_email_link(self.link_pattern)
+    session.log "clicked link in email"
   end
 end

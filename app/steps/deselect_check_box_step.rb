@@ -6,6 +6,7 @@ class DeselectCheckBoxStep < ScopableStep
   def run!(session, check_run)
     with_optional_scope(session) do
       session.uncheck(self.name)
+      session.log "checkbox deselected"
     end
   end
 end

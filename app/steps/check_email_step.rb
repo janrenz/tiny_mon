@@ -7,5 +7,6 @@ class CheckEmailStep < Step
   
   def run!(session, check_run)
     session.check_email(server, login, password)
+    session.log "checked emails"
   end
 end

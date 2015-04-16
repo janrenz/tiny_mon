@@ -6,6 +6,7 @@ class SelectDropdownStep < ScopableStep
   def run!(session, check_run)
     with_optional_scope(session) do
       session.choose(self.name)
+      session.log "dropdown selected"
     end
   end
 end

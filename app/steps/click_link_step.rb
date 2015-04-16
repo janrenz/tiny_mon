@@ -6,6 +6,7 @@ class ClickLinkStep < ScopableStep
   def run!(session, check_run)
     with_optional_scope(session) do
       session.click_link(self.name)
+      session.log "clicked link"
     end
   end
 end

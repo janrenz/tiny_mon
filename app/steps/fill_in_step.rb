@@ -6,5 +6,6 @@ class FillInStep < Step
   
   def run!(session, check_run)
     session.fill_in(self.field, :with => self.value)
+    session.log "field filled with #{value}"
   end
 end

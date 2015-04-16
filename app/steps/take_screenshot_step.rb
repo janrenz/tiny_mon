@@ -6,5 +6,6 @@ class TakeScreenshotStep < Step
     screenshot.step = self
     screenshot.check_run = check_run
     screenshot.save
+    session.log "screenshot taken"
   end
 end

@@ -3,5 +3,6 @@ class RunScriptStep < Step
   
   def run!(session, check_run)
     session.execute_script(code)
+    session.log "script executed"
   end
 end

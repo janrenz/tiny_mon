@@ -16,6 +16,7 @@ class FillInDateStep < ScopableStep
         session.fill_in(self.field, :with => date)
       end
       #TODO: Format date if dateformat is set
+      session.log "date field filled"
     end
   end
 end
