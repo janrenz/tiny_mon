@@ -860,11 +860,11 @@ de:
       key_to_send: "Zu sendende Taste"
       select_key: "Bitte Taste auswählen"
       return: "Return (⏎)"
-      tab "Tab ⇥"
-      up "Pfeil hoch ↑"
-      down "Pfeil runter ↓"
-      left "Pfeil links ←"
-      right "Pfeil rechts →"
+      tab: "Tab ⇥"
+      up: "Pfeil hoch ↑"
+      down: "Pfeil runter ↓"
+      left: "Pfeil links ←"
+      right: "Pfeil rechts →"
   time: 
     formats: 
       log: "%H:%M:%S"
