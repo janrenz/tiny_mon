@@ -1,5 +1,5 @@
 <p>
   <%= f.label :key, t('.send_key'), :class => 'control-label required' %>
-  <%= select_tag :type, options_for_select([[t('.select_key'), 'nothing'], [t('.enter'), 'Enter'],[t('.tab'), 'Tab'],[t('.up'), 'Up'],[t('.down'), 'Down'],[t('.left'), 'Left'],[t('.right'), 'Right']]) , :class => 'form-control' %>
+  <%= select_tag :type, options_for_select([[t('.select_key'), 'nothing'], [t('.return'), 'Return'],[t('.tab'), 'Tab'],[t('.up'), 'Up'],[t('.down'), 'Down'],[t('.left'), 'Left'],[t('.right'), 'Right']]) , :class => 'form-control' %>
   <small><%= t('.key_to_send') %></small>
 </p>

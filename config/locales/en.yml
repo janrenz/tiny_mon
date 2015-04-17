@@ -856,7 +856,7 @@ en:
     wait_step_form:
       duration: Duration
       duration_in_seconds: "Delay in seconds"
-    send_ke_step_form:
+    send_key_step_form:
       send_key: "Key"
       key_to_send: "Key to send"
       select_key: "Please select key"
