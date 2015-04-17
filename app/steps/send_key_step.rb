@@ -6,11 +6,7 @@ class SendKeyStep < Step
 
   def run!(session, check_run)
     symbol = :key.intern
-    if :scope.present?
-      element = session.find(:scope)
-    else
-      element = session.find('body')
-    end
+    (:scope.present?) ? element = session.find(:scope) : element = session.find('body')
 
     element.native.send_key(symbol)
     session.log "send key #{key}"
