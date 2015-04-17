@@ -851,11 +851,21 @@ en:
       relative_or_absolute: "Relative or absolute URL. Relative URLs are with respect to the site's base URL."
       url: URL
     set_user_agent_step_form:
-          what_is_user_agent: "User agent string for identifying mobile devices."
-          user_agent: "user agent"
-    wait_step_form: 
+      what_is_user_agent: "User agent string for identifying mobile devices."
+      user_agent: "user agent"
+    wait_step_form:
       duration: Duration
       duration_in_seconds: "Delay in seconds"
+    send_ke_step_form:
+      send_key: "Key"
+      key_to_send: "Key to send"
+      select_key: "Please select key"
+      return: "Return ⏎"
+      tab "Tab ⇥"
+      up "Arrow up ↑"
+      down "Arrow down ↓"
+      left "Arrow left ←"
+      right "Arrow right →"
   time: 
     formats: 
       log: "%H:%M:%S"
