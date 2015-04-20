@@ -760,6 +760,7 @@ en:
     deselect_check_box: "Deselect check box"
     fill_in: "Fill in field"
     fill_in_date: "Fill in date-field"
+    fill_in_autocomplete: "Fill in autocomplete field"
     go_back: "Go Back"
     in_scope: "in scope %{scope_name}"
     run_script: "Run script"
@@ -808,6 +809,10 @@ en:
       name_specifying_check_box: "ID, title or text that uniquely identifies the check box"
     email_must_be_checked_before_this_step: "An email must have been loaded before this step."
     fill_in_step_form: 
+      field: "Field name"
+      name_specifying_field: "ID, title or text that uniquely identifies the text field"
+      value: Value
+    fill_in_autocomplete_step_form:
       field: "Field name"
       name_specifying_field: "ID, title or text that uniquely identifies the text field"
       value: Value

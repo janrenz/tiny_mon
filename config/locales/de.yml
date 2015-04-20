@@ -759,6 +759,7 @@ de:
     deselect_check_box: "Check Box abwählen"
     fill_in: "Fülle Feld aus"
     fill_in_date: "Fülle Datums-Feld aus"
+    fill_in_autocomplete: "Fülle Autocomplete-Feld aus"
     go_back: "Gehe zurück"
     in_scope: "im Bereich %{scope_name}"
     run_script: "Script ausführen"
@@ -807,6 +808,10 @@ de:
       name_specifying_check_box: "ID, Titel oder Text, womit die Check Box eindeutig identifiziert wird"
     email_must_be_checked_before_this_step: "Vor diesem Schritt muss eine E-Mail geladen worden sein."
     fill_in_step_form: 
+      field: Feld-Name
+      name_specifying_field: "ID, Titel oder Text, womit das Textfeld eindeutig identifiziert wird"
+      value: Wert
+    fill_in_autocomplete_step_form:
       field: Feld-Name
       name_specifying_field: "ID, Titel oder Text, womit das Textfeld eindeutig identifiziert wird"
       value: Wert
