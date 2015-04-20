@@ -18,6 +18,7 @@ class Step < ActiveRecord::Base
       'check_text',
       'check_current_url',
       'fill_in',
+      'fill_in_autocomplete',
       'check_element_count',
       'select_check_box',
       'deselect_check_box',
