@@ -8,7 +8,7 @@ class FillInAutocompleteStep < FillInStep
     session.execute_script %Q{ $('##{field}').focus().typeahead('val', '').focus().typeahead('val', '#{value}'); }
 
     session.find(".tt-suggestions")
-    session.execute_script %Q{ $(".tt-suggestion:contains('#{value}')").click();}
+    session.execute_script %Q{ $(".tt-suggestion:contains('#{value} '):first").click();}
 
     session.log "field filled with #{value}"
   end
