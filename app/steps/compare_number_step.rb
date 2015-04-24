@@ -18,6 +18,8 @@ class CompareNumberStep < Step
       else
         if (session.value1 - value2.to_i).abs > value2.to_i * delta.to_i / 100
           session.fail CompareNumberFailed, "Difference between #{session.value1} and #{value2} too large"
+        else
+          session.log "#{session.value1} and #{value2} are in range of #{delta}%"
         end
       end
     else
