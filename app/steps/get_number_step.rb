@@ -6,11 +6,11 @@ class GetNumberStep < Step
 
   def run!(session, check_run)
     if session.has_css?(scope)
-      code = "return parseInt(document.querySelector('#{scope}').firstChild.nodeValue.match(/\d+/)[0]);"
+      code = "return parseInt(document.querySelector('#{scope}').firstChild.nodeValue.match(/\\d+/)[0]);"
       #TODO find better regex
       temp = session.execute_script(code)
       if (!temp.is_a? Integer) then
-        session.fail GetNumberFailed, "Expected  #{scope} to contain number"
+        session.fail GetNumberFailed, "Expected  #{scope} to contain number (#{temp})"
       else
         session.temp = temp
       end
