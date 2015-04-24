@@ -8,7 +8,7 @@ class CompareNumberStep < Step
 
   def run!(session, check_run)
     if session.has_css?(scope)
-      code = "return parseInt(document.querySelector(\"#{scope}\").text.match(/\\d+/)[0]);"
+      code = "parseInt(document.querySelector('#{scope}').firstChild.nodeValue.match(/\\d+/)[0]);"
       #TODO find better regex
       value2 = session.evaluate_script(code)
       if !value2.is_a? Integer

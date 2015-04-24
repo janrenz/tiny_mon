@@ -12,7 +12,7 @@ class GetNumberStep < Step
       if (!temp.is_a? Integer) then
         session.fail GetNumberFailed, "Expected  #{scope} to contain number (#{temp})"
       else
-        session.temp = temp
+        session.value1 = temp
       end
     else
       session.fail GetNumberFailed, "Expected page to contain #{scope} but was not found"
