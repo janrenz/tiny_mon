@@ -16,7 +16,7 @@ class CompareNumberStep < Step
       elsif session.value1 == nil
         session.fail GetNumberFailed, "Nothing to compare"
       else
-        if (session.value1 - value2.to_i).abs > value2.to_i * :delta.to_i / 100
+        if (session.value1 - value2.to_i).abs > value2.to_i * delta.to_i / 100
           session.fail CompareNumberFailed, "Difference between #{session.value1} and #{value2} too large"
         end
       end
