@@ -12,7 +12,7 @@ class Session < Capybara::Session
   def initialize(url)
     @url = url
     @log_entries = []
-    
+    @value1 = nil
     Capybara.app_host = @url
     
     super(:poltergeist)

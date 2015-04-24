@@ -28,7 +28,7 @@ class Step < ActiveRecord::Base
       'click_link',
       'wait',
       'submit_form',
-      'send_key',
+#      'send_key',
       'check_email',
       'click_email_link',
       'take_screenshot',
@@ -36,7 +36,9 @@ class Step < ActiveRecord::Base
       'go_back',
       'fill_in_date',
       'check_all_links',
-      'set_user_agent'
+      'set_user_agent',
+      'get_number',
+      'compare_number'
     ]
   end
   

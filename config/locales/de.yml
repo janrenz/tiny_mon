@@ -848,6 +848,12 @@ de:
     submit_form_step_form: 
       name: Name
       name_specifying_form: "ID, Titel oder Text, womit das Formular eindeutig identifiziert wird"
+    get_number_form:
+      scope_number: "CSS-Selector"
+      scope_number_description: "CSS-Selector des Elements aus dem die Zahl extrahiert werden soll (Text)"
+    compare_number_form:
+      number_delta: "Abweichung"
+      number_delta_description: "Abweichung in %"
     take_screenshot_step_form: 
       css: CSS
       custom_style_declarations: "Benutzerdefiniertes Stylesheet (CSS). Nutzen Sie das, um sehr variable Seitenteile zu verstecken, z.B. Werbung"

@@ -1,0 +1,11 @@
+<p>
+  <%= f.label :scope, t(".scope_number"), :class => 'control-label required' %>
+  <%= f.text_field :scope, :class => 'form-control' %>
+  <small><%= t(".scope_number_description") %></small>
+</p>
+
+<p>
+  <%= f.label :delta, t(".number_delta"), :class => 'control-label required' %>
+  <%= f.text_field :delta, :class => 'form-control' %>
+  <small><%= t(".number_delta_description") %></small>
+</p>
