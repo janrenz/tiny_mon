@@ -12,7 +12,7 @@ class CompareNumberStep < Step
       #TODO find better regex
       value2 = session.evaluate_script(code)
       if !value2.is_a? Integer
-        session.fail GetNumberFailed, "Expected  #{content} to contain number"
+        session.fail GetNumberFailed, "Expected  #{scope} to contain number"
       elsif session.value1 == nil
         session.fail GetNumberFailed, "Nothing to compare"
       else
@@ -21,7 +21,7 @@ class CompareNumberStep < Step
         end
       end
     else
-      session.fail GetNumberFailed, "Expected page to contain #{content} but was not found"
+      session.fail GetNumberFailed, "Expected page to contain #{scope} but was not found"
     end
   end
 end
