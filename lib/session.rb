@@ -8,11 +8,11 @@ class Session < Capybara::Session
   attr_accessor :log_entries
   attr_accessor :last_email
   attr_accessor :last_screenshot
+  attr_accessor :value1
   
   def initialize(url)
     @url = url
     @log_entries = []
-    @value1 = nil
     Capybara.app_host = @url
     
     super(:poltergeist)
