@@ -746,7 +746,8 @@ en:
     offline: Disabled
     one_or_more_checks_failed: "One or more checks failed"
     success: Success
-  step: 
+  step:
+    check_all_links: "Check all links"
     check_content: "Check content (HTML)"
     check_text: "Check content (Text)"
     check_content: "Check content"
@@ -757,20 +758,22 @@ en:
     click_button: "Click button"
     click_email_link: "Click link in email"
     click_link: "Click link"
+    compare_number: "Get (second) number and compare"
     deselect_check_box: "Deselect check box"
     fill_in: "Fill in field"
     fill_in_date: "Fill in date-field"
     fill_in_autocomplete: "Fill in autocomplete field"
+    get_number: "Get (first) number to compare"
     go_back: "Go Back"
     in_scope: "in scope %{scope_name}"
     run_script: "Run script"
     select_check_box: "Select check box"
     select_dropdown: "Select dropdown"
+    send_key: "Send key"
+    set_user_agent: "Set user agent string"
     submit_form: "Submit form"
     take_screenshot: "Take screenshot"
     visit: Visit
-    send_key: "Send key"
-    set_user_agent: "Set user agent string"
     wait: Wait
   steps: 
     check_content_step: 

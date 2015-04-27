@@ -746,7 +746,8 @@ de:
     offline: Deaktiviert
     one_or_more_checks_failed: "Einer oder mehr Funktionstests fehlgeschlagen"
     success: Erfolg
-  step: 
+  step:
+    check_all_links: "Alle Links prüfen"
     check_content: "Durchsuche Inhalt (HTML)"
     check_text: "Durchsuche Inhalt (Text)"
     check_current_url: "Aktuelle URL prüfen"
@@ -756,20 +757,22 @@ de:
     click_button: "Klicke Button"
     click_email_link: "Klicke Link in E-Mail"
     click_link: "Klicke Link"
+    compare_number: "(zweite) Zahl auslesen und vergleichen"
     deselect_check_box: "Check Box abwählen"
     fill_in: "Fülle Feld aus"
     fill_in_date: "Fülle Datums-Feld aus"
     fill_in_autocomplete: "Fülle Autocomplete-Feld aus"
+    get_number: "(erste) Zahl für Vergleich auslesen"
     go_back: "Gehe zurück"
     in_scope: "im Bereich %{scope_name}"
     run_script: "Script ausführen"
     select_check_box: "Wähle Check Box"
     select_dropdown: "Wähle Dropdown"
+    send_key: "Tastendruck senden"
+    set_user_agent: "User-Agent setzen"
     submit_form: "Schicke Formular ab"
     take_screenshot: "Screenshot erstellen"
     visit: "Gehe zu"
-    set_user_agent: "User-Agent setzen"
-    send_key: "Tastendruck senden"
     wait: Warte
   steps: 
     check_content_step: 
@@ -803,6 +806,9 @@ de:
     click_link_step_form: 
       name: Link-Name
       name_specifying_link: "ID, Titel oder Text, womit der Link eindeutig identifiziert wird"
+    compare_number_form:
+      number_delta: "Abweichung"
+      number_delta_description: "Abweichung in %"
     deselect_check_box_step_form: 
       name: Name
       name_specifying_check_box: "ID, Titel oder Text, womit die Check Box eindeutig identifiziert wird"
@@ -821,6 +827,9 @@ de:
       please_select: "Bitte wählen ..."
       save_step: "Schritt Speichern"
       type: Typ
+    get_number_form:
+      scope_number: "CSS-Selector"
+      scope_number_description: "CSS-Selector des Elements aus dem die Zahl extrahiert werden soll (Text)"
     index: 
       add_step: "Schritt hinzufügen"
       are_you_sure: "Sind Sie sicher?"
@@ -845,27 +854,6 @@ de:
     select_dropdown_step_form: 
       name: Name
       name_specifying_dropdown: "ID, Titel oder Text, womit das Dropdown eindeutig identifiziert wird"
-    submit_form_step_form: 
-      name: Name
-      name_specifying_form: "ID, Titel oder Text, womit das Formular eindeutig identifiziert wird"
-    get_number_form:
-      scope_number: "CSS-Selector"
-      scope_number_description: "CSS-Selector des Elements aus dem die Zahl extrahiert werden soll (Text)"
-    compare_number_form:
-      number_delta: "Abweichung"
-      number_delta_description: "Abweichung in %"
-    take_screenshot_step_form: 
-      css: CSS
-      custom_style_declarations: "Benutzerdefiniertes Stylesheet (CSS). Nutzen Sie das, um sehr variable Seitenteile zu verstecken, z.B. Werbung"
-    visit_step_form: 
-      relative_or_absolute: "Relative oder absolute URLs. Relative URLs beziehen sich auf die Basis-URL der Site."
-      url: URL
-    set_user_agent_step_form:
-      what_is_user_agent: "Der User-Agent-String zur Identifizierung mobiler Geräte."
-      user_agent: "User-Agent"
-    wait_step_form: 
-      duration: Dauer
-      duration_in_seconds: "Wartezeit in Sekunden"
     send_key_step_form:
       send_key: "Taste"
       key_to_send: "Zu sendende Taste"
@@ -876,6 +864,21 @@ de:
       down: "Pfeil runter ↓"
       left: "Pfeil links ←"
       right: "Pfeil rechts →"
+    set_user_agent_step_form:
+      what_is_user_agent: "Der User-Agent-String zur Identifizierung mobiler Geräte."
+      user_agent: "User-Agent"
+    submit_form_step_form: 
+      name: Name
+      name_specifying_form: "ID, Titel oder Text, womit das Formular eindeutig identifiziert wird"
+    take_screenshot_step_form: 
+      css: CSS
+      custom_style_declarations: "Benutzerdefiniertes Stylesheet (CSS). Nutzen Sie das, um sehr variable Seitenteile zu verstecken, z.B. Werbung"
+    visit_step_form: 
+      relative_or_absolute: "Relative oder absolute URLs. Relative URLs beziehen sich auf die Basis-URL der Site."
+      url: URL
+    wait_step_form: 
+      duration: Dauer
+      duration_in_seconds: "Wartezeit in Sekunden"
   time: 
     formats: 
       log: "%H:%M:%S"
