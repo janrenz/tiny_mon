@@ -750,7 +750,6 @@ en:
     check_all_links: "Check all links"
     check_content: "Check content (HTML)"
     check_text: "Check content (Text)"
-    check_content: "Check content"
     check_current_url: "Check current URL"
     check_element_count: "Check count"
     check_email: "Check email"
@@ -807,6 +806,9 @@ en:
     click_link_step_form: 
       name: "Link name"
       name_specifying_link: "ID, title or text that uniquely identifies the link"
+    compare_number_form:
+      number_delta: "difference"
+      number_delta_description: "Difference in %"  
     deselect_check_box_step_form: 
       name: Name
       name_specifying_check_box: "ID, title or text that uniquely identifies the check box"
@@ -825,6 +827,9 @@ en:
       please_select: "Please select ..."
       save_step: "Save Step"
       type: Type
+    get_number_form:
+      scope_number: "CSS-Selector"
+      scope_number_description: "CSS-Selector from which the number should be extracted (text)"
     index: 
       add_step: "Add Step"
       are_you_sure: "Are you sure?"
@@ -846,15 +851,19 @@ en:
     select_check_box_step_form: 
       name: Name
       name_specifying_check_box: "ID, title or text that uniquely identifies the check box"
-    get_number_form:
-      scope_number: "CSS-Selector"
-      scope_number_description: "CSS-Selector from which the number should be extracted (text)"
-    compare_number_form:
-      number_delta: "difference"
-      number_delta_description: "Difference in %"
     select_dropdown_step_form: 
       name: Name
       name_specifying_dropdown: "ID, title or text that uniquely identifies the drop down"
+    send_key_step_form:
+      send_key: "Key"
+      key_to_send: "Key to send"
+      select_key: "Please select key"
+      return: "Return ⏎"
+      tab: "Tab ⇥"
+      up: "Arrow up ↑"
+      down: "Arrow down ↓"
+      left: "Arrow left ←"
+      right: "Arrow right →"
     submit_form_step_form: 
       name: Name
       name_specifying_form: "ID, title or text that uniquely identifies the form"
@@ -870,16 +879,6 @@ en:
     wait_step_form:
       duration: Duration
       duration_in_seconds: "Delay in seconds"
-    send_key_step_form:
-      send_key: "Key"
-      key_to_send: "Key to send"
-      select_key: "Please select key"
-      return: "Return ⏎"
-      tab: "Tab ⇥"
-      up: "Arrow up ↑"
-      down: "Arrow down ↓"
-      left: "Arrow left ←"
-      right: "Arrow right →"
   time: 
     formats: 
       log: "%H:%M:%S"
