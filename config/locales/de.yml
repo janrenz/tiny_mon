@@ -806,7 +806,7 @@ de:
     click_link_step_form: 
       name: Link-Name
       name_specifying_link: "ID, Titel oder Text, womit der Link eindeutig identifiziert wird"
-    compare_number_form:
+    compare_number_step_form:
       number_delta: "Abweichung"
       number_delta_description: "Abweichung in %"
     deselect_check_box_step_form: 
@@ -827,7 +827,7 @@ de:
       please_select: "Bitte wählen ..."
       save_step: "Schritt Speichern"
       type: Typ
-    get_number_form:
+    get_number_step_form:
       scope_number: "CSS-Selector"
       scope_number_description: "CSS-Selector des Elements aus dem die Zahl extrahiert werden soll (Text)"
     index: 
