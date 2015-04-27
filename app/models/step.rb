@@ -32,7 +32,6 @@ class Step < ActiveRecord::Base
       'check_email',
       'click_email_link',
       'take_screenshot',
-      'compare_screenshot',
       'run_script',
       'go_back',
       'fill_in_date',
