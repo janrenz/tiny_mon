@@ -32,4 +32,7 @@ namespace :scheduler do
 
     scheduler.join
   end
+  task send_stats: :environment do
+    StatisticMailer.daily_stats.deliver
+  end
 end
