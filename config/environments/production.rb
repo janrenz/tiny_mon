@@ -59,7 +59,7 @@ TinyMon::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => 'http://localhost:5000' }
+  config.action_mailer.default_url_options = { :host => 'http://localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       :address              =>  ENV['SMTP_ADDRESS'],
@@ -67,7 +67,7 @@ TinyMon::Application.configure do
       :domain               =>  ENV['SMTP_DOMAIN'],
       :user_name            =>  ENV['SMTP_USER'],
       :password             =>  ENV['SMTP_PASS'],
-      :authentication       => 'login',
+      :authentication       => :login,
       :enable_starttls_auto => true
   }
 end
